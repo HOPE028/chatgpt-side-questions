@@ -1,5 +1,10 @@
 # ChatGPT Side-Question
 
+Video:
+[Demo](https://www.loom.com/share/1a1cb3db3fe64cf8bf2b3bfee0102100)
+
+![Photo of Side Questions](./demo_pic/Demo.png)
+
 A cross-browser WebExtension (Chrome + Firefox, MV3) that adds a "highlight → ask a side-question" affordance to ChatGPT.
 
 Select any text inside an assistant message, click the **Ask side-question** pill, type a short follow-up, and get a concise answer rendered **inline right under the paragraph you highlighted** — answered by a separate OpenAI call using your own API key. The main ChatGPT thread is not touched, so no context pollution and no scrolling to the bottom of the page just to read a one-sentence answer.
@@ -21,7 +26,7 @@ Select any text inside an assistant message, click the **Ask side-question** pil
 
 1. Open `about:debugging#/runtime/this-firefox`.
 2. Click **Load Temporary Add-on…** and pick `manifest.json` in this folder.
-3. Open `about:addons`, find *ChatGPT Side-Question*, click **Preferences** (or the ⚙ menu → Options).
+3. Open `about:addons`, find _ChatGPT Side-Question_, click **Preferences** (or the ⚙ menu → Options).
 4. Paste your API key, pick a model, click **Test key**, then **Save**.
 
 Temporary add-ons in Firefox are cleared on browser restart. For a persistent install, package the extension with `web-ext` and use a signed build.
@@ -31,7 +36,7 @@ Temporary add-ons in Firefox are cleared on browser restart. For a persistent in
 1. Go to <https://chatgpt.com> and start a conversation.
 2. When ChatGPT replies, **highlight any text** in the reply (at least two characters).
 3. A small green **Ask side-question** pill appears near the selection.
-4. Click it, type your follow-up (e.g. *"what does this mean?"*, *"give me an example"*), press Enter.
+4. Click it, type your follow-up (e.g. _"what does this mean?"_, _"give me an example"_), press Enter.
 5. A card is inserted inline under the assistant's message with a streaming answer.
 
 Selections spanning multiple messages, or selections inside your own messages, don't trigger the pill — by design.
@@ -68,3 +73,7 @@ src/
   content/content.css
   options/options.{html,js,css}
 ```
+
+---
+
+Made with love by Pasha Khoshkebari
