@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background: Canvas;
+  color: CanvasText;
+}
+
+main {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.sub {
+  margin: 0 0 24px;
+  color: color-mix(in srgb, CanvasText 70%, transparent);
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+label span {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="password"]:focus,
+select:focus {
+  border-color: #10a37f;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  color: CanvasText;
+  background: Canvas;
+  border: 1px solid color-mix(in srgb, CanvasText 25%, transparent);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: color-mix(in srgb, CanvasText 6%, Canvas);
+}
+
+button.primary {
+  color: #fff;
+  background: #10a37f;
+  border-color: #10a37f;
+}
+
+button.primary:hover {
+  background: #0e8f6e;
+}
+
+.status {
+  margin-top: 16px;
+  min-height: 1.2em;
+  font-size: 13px;
+}
+
+.status.ok {
+  color: #10a37f;
+}
+
+.status.err {
+  color: #d94f4f;
+}

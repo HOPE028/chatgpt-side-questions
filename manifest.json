@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Side-Question",
+  "version": "0.1.0",
+  "description": "Highlight any text in a ChatGPT reply and ask a side-question. The answer appears inline, answered by a separate OpenAI call that doesn't touch the main thread.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": {
+    "service_worker": "src/background/background.js",
+    "scripts": ["src/background/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+      "js": ["src/content/content.js"],
+      "css": ["src/content/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "src/options/options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_title": "ChatGPT Side-Question settings"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "side-question@pasha.local",
+      "strict_min_version": "115.0"
+    }
+  }
+}

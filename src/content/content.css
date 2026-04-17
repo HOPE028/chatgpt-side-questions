@@ -1,0 +1,156 @@
+.side-q-pill,
+.side-q-composer,
+.side-q-card {
+  color-scheme: light dark;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.side-q-pill {
+  position: absolute;
+  z-index: 2147483000;
+  display: none;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #10a37f;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+.side-q-pill:hover {
+  background: #0e8f6e;
+}
+
+.side-q-composer {
+  position: absolute;
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  min-width: 320px;
+}
+
+.side-q-input {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid color-mix(in srgb, CanvasText 15%, transparent);
+  border-radius: 6px;
+  background: Canvas;
+  color: CanvasText;
+  outline: none;
+}
+.side-q-input:focus {
+  border-color: #10a37f;
+}
+
+.side-q-send {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #10a37f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.side-q-send:hover {
+  background: #0e8f6e;
+}
+
+.side-q-close {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 1;
+  color: CanvasText;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.side-q-close:hover {
+  opacity: 1;
+  background: color-mix(in srgb, CanvasText 8%, transparent);
+}
+
+.side-q-card {
+  margin: 10px 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  background: color-mix(in srgb, #10a37f 6%, Canvas);
+  border-left: 3px solid #10a37f;
+  border-radius: 6px;
+  color: CanvasText;
+}
+
+.side-q-card--error {
+  background: color-mix(in srgb, #d94f4f 8%, Canvas);
+  border-left-color: #d94f4f;
+}
+
+.side-q-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.side-q-badge {
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #10a37f;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.side-q-q {
+  flex: 1;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.side-q-card-close {
+  width: 22px;
+  height: 22px;
+  font-size: 15px;
+  line-height: 1;
+  color: CanvasText;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.side-q-card-close:hover {
+  opacity: 1;
+  background: color-mix(in srgb, CanvasText 8%, transparent);
+}
+
+.side-q-snippet {
+  margin-bottom: 6px;
+  padding-left: 8px;
+  font-size: 12px;
+  font-style: italic;
+  color: color-mix(in srgb, CanvasText 65%, transparent);
+  border-left: 2px solid color-mix(in srgb, CanvasText 15%, transparent);
+}
+
+.side-q-body {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
